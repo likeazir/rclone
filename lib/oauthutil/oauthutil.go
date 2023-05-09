@@ -376,7 +376,7 @@ func overrideCredentials(name string, m configmap.Mapper, origConfig *oauth2.Con
 		changed = true
 	}
 	ClientSecret, ok := m.Get(config.ConfigClientSecret)
-	if ok && ClientSecret != "" {
+	if ok && {
 		newConfig.ClientSecret = ClientSecret
 		changed = true
 	}
